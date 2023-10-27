@@ -1,7 +1,7 @@
-NAME = attack
+NAME = sedRepl
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address
-CXXFILES = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
+CXXFILES = main.cpp replace.cpp file-io.cpp
 CXXOBJ = $(CXXFILES:.cpp=.o)
 
 all: $(NAME)
