@@ -14,6 +14,10 @@ int main(int ac, char *av[]) {
       return -1;
     }
 
+    if (!*av[2]) {
+      std::cerr << RED << "Invalid parameter" << RESET << std::endl;
+      return 1;
+    }
     replace(ret, av[2], av[3]);
     // writing to a file
     std::string file = std::string(av[1]) + std::string(".replace");
